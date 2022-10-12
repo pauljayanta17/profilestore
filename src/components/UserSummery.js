@@ -4,10 +4,8 @@ function UserSummery(props) {
   return (
     <>
      
-        <button className="btn btn-danger float-end" onClick={props.logout}>
-          Logout
-        </button>
-       <DetailsShow data={props.data}/>
+       
+       <DetailsShow data={props.data} logout={props.logout}/>
         <br />
         
       

@@ -19,9 +19,15 @@ function DetailsShow(props) {
           {props.data.email}
         </span>
       </div>
-        <button className="btn bg-primary bg-gradient mx-2 text-light">
-          Edit your profile
+      <button className="btn btn-danger bg-gradient mx-2" onClick={props.logout}>
+          Logout
         </button>
+        {/* <button className="btn bg-primary bg-gradient mx-2 text-light">
+          Edit your profile
+        </button> */}
+        {/* <button className="btn bg-danger bg-gradient mx-2 text-light">
+          Delete Profile
+        </button> */}
     </>
   );
 }

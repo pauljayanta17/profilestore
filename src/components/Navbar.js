@@ -3,9 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import NavIcon from '../assets/folder-clipart.svg'
 function Navbar() {
   const location = useLocation()
-  const handleOnSearch = (event) => {
-    event.preventDefault();
-  };
+  
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark ">
       <div className="container-fluid">
@@ -13,6 +11,7 @@ function Navbar() {
           <img src={NavIcon} alt="error" 
            width="30"      
           />
+          
         </Link>
         <button
           className="navbar-toggler"
@@ -38,21 +37,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button
-              className="btn btn-outline-success"
-              type="submit"
-              onClick={handleOnSearch}
-            >
-              Search
-            </button>
-          </form>
+         
         </div>
       </div>
     </nav>

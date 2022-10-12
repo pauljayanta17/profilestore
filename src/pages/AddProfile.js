@@ -36,6 +36,7 @@ function AddProfile() {
   };
   const handleGithubChanged = (event) => {
     setgithub(event.target.value);
+    
   };
   const handleTwitterChanged = (event) => {
     settwitter(event.target.value);
@@ -49,6 +50,7 @@ function AddProfile() {
   const handleProjectsLinksChanged = (event) => {
     setprojectsLinks(event.target.value);
   };
+  
   const handleAddProfile = async (event) => {
     event.preventDefault();
     if (

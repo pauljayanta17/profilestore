@@ -38,21 +38,26 @@ function EditProfile(props) {
   };
   const handleGithubChanged = (event) => {
     setgithub(event.target.value);
+  
   };
   const handleTwitterChanged = (event) => {
     settwitter(event.target.value);
+   
   };
   const handleFacebookChanged = (event) => {
     setfacebook(event.target.value);
+  
   };
   const handleLinkedinChanged = (event) => {
     setlinkedin(event.target.value);
+    
   };
   const handleProjectsLinksChanged = (event) => {
     setprojectsLinks(event.target.value);
   };
+ 
+
   const handleUpdateProfile = async () => {
-   
     if (
       name !== "" &&
       email !== "" &&
@@ -90,7 +95,7 @@ function EditProfile(props) {
             }),
           }
         );
-        const data = await resposne.json();
+        // const data = await resposne.json();
         setstatus(resposne.status);
         resposne.status !== 200
           ? setmsg("something went wrong")

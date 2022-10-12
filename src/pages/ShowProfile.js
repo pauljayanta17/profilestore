@@ -53,27 +53,27 @@ function ShowProfile(props) {
                   {props.data.pincode}
                 </div>
                 Links
-                <div className="container fs-6 my-2 d-flex flex-column">
-                  <a href={props.data.github} target="_blank">
+                <div className="container fs-6 my-2 d-flex flex-column" rel="noreferrer">
+                  <a href={props.data.github} target="#">
                     <i className="bi bi-github mx-2"></i>
                     {props.data.github}
                   </a>
-                  <a href={props.data.facebook} target="_blank">
+                  <a href={props.data.facebook}target="#">
                     <i className="bi bi-facebook mx-2"></i>
                     {props.data.facebook}{" "}
                   </a>
-                  <a href={props.data.twitter} target="_blank">
+                  <a href={props.data.twitter}target="#">
                     <i className="bi bi-twitter mx-2"></i>
                     {props.data.twitter}{" "}
                   </a>
-                  <a href={props.data.linkedin} target="_blank">
+                  <a href={props.data.linkedin}target="#">
                     <i className="bi bi-linkedin mx-2"></i>
                     {props.data.linkedin}{" "}
                   </a>
-                  <a>
+                  
                     <i className="bi bi-projector mx-2"></i>
                     {props.data.projectsLinks}
-                  </a>
+                 
                 </div>
               </h5>
             </div>

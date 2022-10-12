@@ -78,6 +78,7 @@ function HomePage() {
   };
 
   const handleLogout = () => {
+    
     window.localStorage.removeItem("user");
   };
 
@@ -135,7 +136,7 @@ function HomePage() {
         </>
       ) : (
         <div className="pt-5">
-          <Spinner />
+          <Spinner title='Please wait we are fetching your details' color='success'/>
         </div>
       )}
     </div>
